@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario</title>
+    <!---->
+  </head>
+  <body
+    style="
+      display: inline-flex;
+      background-color: rgb(7, 0, 6);
+      width: 10%;
+      margin: 10% 50%;
+      border-radius: 15%;
+      color: #fbfdfb;
+    "
+  >
+    <div></div>
+    <form action="cadastro.nozes" method="post">
+      <!--inicio do formulario-->
+      <fieldset>
+        <legend>Informações pessoais</legend>
+        <h1>Modelo de Formulário</h1>
+        <h2>Com diversos tipos de preenchimento</h2>
+        <!---Data -->
+        Data: <br />
+        <input
+          type="date"
+          name="data"
+          min="2000-12-31"
+          max="2015-09-2"
+        /><br /><br />
+        <!---->
+        <!--Hora-->
+        Hora: <br />
+        <input type="time" name="hora" /><br /><br />
+        <!---->
+        <!--Data e hora-->
+        Data e hora:<br />
+        <input type="datetime-local" name="data-e-hora" /><br /><br />
+        <!--Semana-->
+        Semana:<br />
+        <input type="week" name="semana" /><br /><br />
+        <!--Mês e ano-->
+        Mês e ano: <br />
+        <input type="month" name="mes-ano" /><br /><br />
+        <!-- Nome-->
+        Nome: <br />
+        <input type="text" name="nome" autofocus maxlength="20" /><br />
+        <!--Senha-->
+        Senha: <br />
+        <input
+          type="password"
+          name="Senha"
+          required
+          autofocus
+          maxlength="8"
+        /><br /><br />
+        <!--Email-->
+        Email: <br />
+        <input
+          type="email"
+          name="email"
+          required
+          autocomplete="off"
+          placeholder="seuEmail@gmail.com"
+        /><br /><br />
+        <!---->
+        <!---->
+        <!--Lista oculta-->
+
+        Escolha um curso: <br />
+        <input name="cursos" list="lista-cursos" />
+        <datalist id="lista-cursos">
+          <option value="HTML5">HTML5</option>
+          <option value="CSS3">CSS3</option>
+          <option value="PHP">PHP</option>
+          <option value="JAVA">JAVA</option>
+          <option value="JAVASCRIPT" checked>JAVASCRIPT</option>
+        </datalist>
+        <br /><br />
+
+        <!--Imagem-->
+        Imagem: <br /><br />
+        <input type="file" name="Imagem" /><br />
+        <!---->
+        <!---->
+        <input type="hidden" name="id" /><br />
+        <!---->
+        <!--Site-->
+        URL: <br />
+        <input type="url" name="site" placeholder="www://" /><br /><br />
+        <!--Pesquisas-->
+        Search: <br />
+        <input type="search" name="pesquisa" /><br /><br />
+        <!--tlefone-->
+        Telene: <br />
+        <input type="tel" name="telefone" placeholder="celular" /><br /><br />
+        <!--Escolha unitaria-->
+        Time:<br />
+        <input type="radio" name="planeta" value="planeta" />Planeta<br />
+        <input type="radio" name="planeta" value="satelete" checked />Lua<br />
+        <input type="radio" name="planeta" value="Luz" />Sol<br /><br />
+        <!---->
+        <!--Campo de texto-->
+        Mensagem:<br />
+        <textarea name="mensagem" cols="50" rows="5"></textarea><br /><br />
+        <!--Escolha variads-->
+        <!---->
+        <!--Seleções-->
+        Escolha seu veículo: <br /><br />
+        <select name="veiculo">
+          <optgroup label="Carro">
+            <option value="camaro">Camaro</option>
+            <option value="ferrary">Ferrary</option>
+            <option value="fusca">Fusca</option>
+            <option value="hilux">Hilux</option>
+          </optgroup>
+
+          <optgroup label="moto">
+            <option value="pop502">Pop502</option>
+            <option value="cg200">CG200</option>
+            <option value="zig-75">Zig-75</option>
+          </optgroup></select
+        ><br /><br />
+        <!---->
+        <!--Palheta de cores-->
+        Cores:<br />
+        <input type="checkbox" name="cores" value="vermelho" />Vermelho<br />
+        <input type="checkbox" name="cores" value="Azul" checked />Azul <br />
+        <input type="checkbox" name="cores" value="Preto" />Preto<br />
+        <input type="checkbox" name="cores" value="Marfim" />Marfim<br /><br />
+        <!---->
+        Quantidade: <br />
+        <input type="number" name="quantidade" min="0" max="250" /><br /><br />
+        <input
+          type="number"
+          name="quantidade"
+          min="0"
+          max="500"
+          step="10"
+        /><br />
+        <input type="range" name="quantidade" />
+        <!--Palheta de cores-->
+        Cor: <br />
+        <input type="color" name="cor" /><br />
+        <!--Botão-->
+        <input type="submit" name="btn-enviar" value="Enviar" />
+      </fieldset>
+    </form>
+    <!--Fim do formulario-->
+  </body>
+</html>
